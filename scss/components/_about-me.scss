@@ -1,0 +1,102 @@
+.container-about {
+  @extend %container;
+
+  .about-me {
+    margin-top: 19rem;
+    color: $Grey;
+    @extend %heading-vertical-line-style;
+    @include MQ(mediumScreen) {
+      @include heading-vertical-line-style-mediaQ;
+    }
+  }
+  p {
+    padding-top: 2rem;
+  }
+
+  .skill-col-1 {
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    @include MQ(mediumScreen) {
+      text-align: center;
+      padding-top: 3rem;
+    }
+    @include MQ(mobileScreen) {
+      display: flex;
+    }
+    ul {
+      display: inline-block;
+      list-style-type: none;
+      // padding-right: 4rem;
+      padding: 12px;
+      text-transform: uppercase;
+      line-height: 2rem;
+      @include MQ(mobileScreen) {
+        padding: 12px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    li {
+      color: $Grey;
+    }
+    li:nth-child(odd) {
+      color: $Gold;
+    }
+  }
+
+  .about-content {
+    margin-top: 2rem;
+    display: flex;
+    line-height: 1.8rem;
+    @include MQ(mediumScreen) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .content {
+      padding-right: 4.2rem;
+      margin-top: 2rem;
+
+      @include MQ(mediumScreen) {
+        padding: 0;
+      }
+    }
+
+    .image-container {
+      position: relative;
+      z-index: 0;
+      @include MQ(mediumScreen) {
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    .my-image {
+      margin-top: 4.3rem;
+      width: 400px;
+      border-radius: 0.7rem;
+      position: absolute;
+      margin-right: 1.7rem;
+      z-index: 1;
+      @include MQ(mediumScreen) {
+        position: relative;
+      }
+    }
+
+    .border {
+      z-index: 0;
+      margin-top: 5rem;
+      position: relative;
+      border: 2px solid $Gold;
+      border-radius: 0.7rem;
+      width: 400px;
+      height: 300px;
+      top: -30px;
+      right: -30px;
+      @include MQ(mediumScreen) {
+        position: absolute;
+        left: 52%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}

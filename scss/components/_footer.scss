@@ -1,0 +1,103 @@
+.footer {
+  //   @extend %container;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background: rgb(252, 252, 252);
+  width: 100%;
+  height: 200px;
+  margin-top: 8rem;
+  position: relative;
+  z-index: 0;
+  color: rgb(36, 36, 36);
+  @include MQ(mediumScreen) {
+    font-size: 1.1rem;
+    height: 150px;
+  }
+  @include MQ(mobileScreen) {
+    height: 200px;
+  }
+  h2 {
+    @extend %container;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    @include MQ(mediumScreen) {
+      font-size: 2rem;
+    }
+    @include MQ(mediumScreen) {
+      font-size: 1.5rem;
+    }
+  }
+  h3 {
+    @extend %container;
+    font-size: 1.5rem;
+    grid-column: 1;
+    font-weight: 400;
+    @include MQ(mediumScreen) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .social-icons {
+    grid-row: 3;
+    grid-column: 1;
+    padding-top: 1rem;
+    margin: 0;
+    @include MQ(mediumScreen) {
+      font-size: 0.7rem;
+    }
+    .fab {
+      padding: 0 8px 0 0;
+    }
+    a {
+      color: $Grey;
+    }
+    :hover {
+      color: $Gold;
+      transition: 500ms ease;
+    }
+  }
+
+  .footer-heading {
+    @extend %container;
+    z-index: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+
+    h2 {
+      margin: 0;
+      @include MQ(mobileScreen) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    h3 {
+      margin: 0;
+      @include MQ(mobileScreen) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    @include MQ(mobileScreen) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .email {
+      font-weight: 300;
+      grid-column: 2;
+      grid-row: 3;
+      justify-self: end;
+      align-self: end;
+      @include MQ(mediumScreen) {
+        font-size: 1rem;
+      }
+      @include MQ(mobileScreen) {
+        align-self: center;
+        padding-top: 1rem;
+      }
+    }
+  }
+}
