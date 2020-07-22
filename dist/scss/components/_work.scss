@@ -1,0 +1,29 @@
+.container-work {
+  @extend %container;
+  @extend %heading-vertical-line-style;
+  @include MQ(mediumScreen) {
+    @include heading-vertical-line-style-mediaQ;
+  }
+
+  margin-top: 15rem;
+
+  h2 {
+    color: $Grey;
+  }
+  .work-1 {
+    @extend %work-section-style;
+    @include MQ(mediumScreen) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .work-2 {
+    @extend %work-section-style;
+    @include MQ(mediumScreen) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
