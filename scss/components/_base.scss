@@ -15,8 +15,8 @@ body {
 
 %container {
   margin: 0 auto;
-  width: 90%;
-  max-width: 1440px;
+  width: 80%;
+  max-width: 1200px;
 }
 
 %btn-style {
@@ -116,13 +116,13 @@ body {
 
 @mixin MQ($breakpoint) {
   @if $breakpoint == largeScreen {
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1200px) {
       @content;
     }
   }
 
   @if $breakpoint == mediumScreen {
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 979px) {
       @content;
     }
   }
@@ -132,7 +132,12 @@ body {
     }
   }
   @if $breakpoint == mobileScreen {
-    @media only screen and (max-width: 604px) {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == extraSmall {
+    @media only screen and (max-width: 320px) {
       @content;
     }
   }

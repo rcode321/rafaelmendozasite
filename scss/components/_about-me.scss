@@ -1,6 +1,6 @@
 .container-about {
   @extend %container;
-
+  // overflow: hidden;
   .about-me {
     margin-top: 19rem;
     color: $Grey;
@@ -8,15 +8,27 @@
     @include MQ(mediumScreen) {
       @include heading-vertical-line-style-mediaQ;
     }
+    @include MQ(mediumScreen) {
+      margin-top: 14rem;
+    }
+    h2 {
+      color: $Grey;
+      @include MQ(extraSmall) {
+        font-size: 1.2rem;
+      }
+    }
   }
   p {
     padding-top: 2rem;
+    @include MQ(extraSmall) {
+      font-size: 0.8rem;
+    }
   }
 
   .skill-col-1 {
     font-weight: 700;
-    font-size: 1.1rem;
 
+    // @extend %container;
     @include MQ(mediumScreen) {
       text-align: center;
       padding-top: 3rem;
@@ -24,15 +36,18 @@
     @include MQ(mobileScreen) {
       display: flex;
     }
+    @include MQ(extraSmall) {
+      display: flex;
+      text-align: start;
+      font-size: 0.6rem;
+    }
     ul {
       display: inline-block;
       list-style-type: none;
-      // padding-right: 4rem;
       padding: 12px;
       text-transform: uppercase;
       line-height: 2rem;
       @include MQ(mobileScreen) {
-        padding: 12px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -42,6 +57,9 @@
     }
     li:nth-child(odd) {
       color: $Gold;
+    }
+    .fab {
+      padding: 2rem 0px;
     }
   }
 
@@ -69,6 +87,9 @@
         left: 50%;
         transform: translate(-50%, 0);
       }
+      @include MQ(extraSmall) {
+        margin: 0;
+      }
     }
     .my-image {
       margin-top: 4.3rem;
@@ -79,6 +100,9 @@
       z-index: 1;
       @include MQ(mediumScreen) {
         position: relative;
+      }
+      @include MQ(mobileScreen) {
+        width: 90%;
       }
     }
 
@@ -96,6 +120,10 @@
         position: absolute;
         left: 52%;
         transform: translate(-50%, 0);
+      }
+      @include MQ(mobileScreen) {
+        width: 90%;
+        height: 88%;
       }
     }
   }

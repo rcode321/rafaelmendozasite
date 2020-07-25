@@ -17,6 +17,10 @@
   .logo {
     float: left;
     padding-top: 0.5rem;
+    @include MQ(extraSmall) {
+      width: 35px;
+      padding-top: 0.9rem;
+    }
   }
   .resume {
     @extend %btn-style;

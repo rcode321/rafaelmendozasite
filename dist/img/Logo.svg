@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50.184" height="50.184" viewBox="0 0 50.184 50.184">
-  <g id="Logo" transform="translate(-140 -19)">
-    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(140 19)" fill="none" stroke="#dea83b" stroke-width="5">
-      <rect width="50.184" height="50.184" rx="7" stroke="none"/>
-      <rect x="2.5" y="2.5" width="45.184" height="45.184" rx="4.5" fill="none"/>
-    </g>
-    <text id="R" transform="translate(154 55)" fill="#dea83b" font-size="30" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">R</tspan></text>
-  </g>
-</svg>

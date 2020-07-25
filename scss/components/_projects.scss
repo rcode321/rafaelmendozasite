@@ -8,20 +8,29 @@
 
   margin-top: 10rem;
   margin-bottom: 10rem;
+
   .fa-free-code-camp {
     color: green;
   }
-
+  h2 {
+    color: $Grey;
+    @include MQ(extraSmall) {
+      font-size: 1.2rem;
+    }
+  }
   .project-grid {
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(300px, 12fr));
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    grid-auto-rows: 450px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-auto-rows: 250px;
     // grid-auto-flow: dense;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     margin-top: 10rem;
     background-size: contain;
     background-repeat: no-repeat;
+    @include MQ(extraSmall) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
   }
 
   .project-grid figure img {
@@ -81,8 +90,11 @@
     @include MQ(mediumScreen) {
       font-size: 1.2rem;
     }
-    // @include MQ(smallScreen) {
-    //   font-size: 1rem;
-    // }
+    @include MQ(smallScreen) {
+      font-size: 1rem;
+    }
+    @include MQ(extraSmall) {
+      font-size: 0.9rem;
+    }
   }
 }
