@@ -60,7 +60,7 @@
 
 /* MENU STYLES */
 .menu-wrap {
-  position: fixed;
+  position: relative;
   top: 0;
   // left: 0;
   right: 0;
@@ -102,6 +102,12 @@
   @include MQ(mediumScreen) {
     display: block;
     right: 28px;
+  }
+  @include MQ(mobileScreen) {
+    right: 0;
+  }
+  @include MQ(extraSmall) {
+    right: 0;
   }
 }
 
