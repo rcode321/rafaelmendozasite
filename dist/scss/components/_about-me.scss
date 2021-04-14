@@ -21,12 +21,12 @@
   p {
     padding-top: 2rem;
     @include MQ(extraSmall) {
-      font-size: 0.8rem;
+      font-size: 2rem;
     }
   }
 
   .skill-col-1 {
-    font-weight: 700;
+    font-weight: 200;
 
     // @extend %container;
     @include MQ(mediumScreen) {
@@ -93,7 +93,7 @@
     }
     .my-image {
       margin-top: 4.3rem;
-      width: 400px;
+      width: 200px;
       border-radius: 0.7rem;
       position: absolute;
       margin-right: 1.7rem;
