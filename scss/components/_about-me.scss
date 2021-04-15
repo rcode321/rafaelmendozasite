@@ -21,12 +21,12 @@
   p {
     padding-top: 2rem;
     @include MQ(extraSmall) {
-      font-size: 0.8rem;
+      font-size: 2rem;
     }
   }
 
   .skill-col-1 {
-    font-weight: 700;
+    font-weight: 200;
 
     // @extend %container;
     @include MQ(mediumScreen) {
@@ -64,7 +64,7 @@
   }
 
   .about-content {
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     line-height: 1.8rem;
     @include MQ(mediumScreen) {
@@ -93,7 +93,8 @@
     }
     .my-image {
       margin-top: 4.3rem;
-      width: 400px;
+      width: 350px;
+
       border-radius: 0.7rem;
       position: absolute;
       margin-right: 1.7rem;
@@ -108,14 +109,14 @@
 
     .border {
       z-index: 0;
-      margin-top: 5rem;
+      margin-top: 7rem;
       position: relative;
       border: 2px solid $Gold;
       border-radius: 0.7rem;
-      width: 400px;
-      height: 300px;
-      top: -30px;
-      right: -30px;
+      width: 355px;
+      height: 500px;
+      top: -65px;
+      right: -18px;
       @include MQ(mediumScreen) {
         position: absolute;
         left: 52%;
