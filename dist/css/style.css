@@ -370,12 +370,12 @@ body {
 
 @media only screen and (max-width: 320px) {
   .container-about p {
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
 }
 
 .container-about .skill-col-1 {
-  font-weight: 700;
+  font-weight: 200;
 }
 
 @media only screen and (max-width: 979px) {
@@ -470,7 +470,7 @@ body {
 
 .container-about .about-content .my-image {
   margin-top: 4.3rem;
-  width: 400px;
+  width: 350px;
   border-radius: 0.7rem;
   position: absolute;
   margin-right: 1.7rem;
@@ -491,14 +491,14 @@ body {
 
 .container-about .about-content .border {
   z-index: 0;
-  margin-top: 5rem;
+  margin-top: 7rem;
   position: relative;
   border: 2px solid #dea83b;
   border-radius: 0.7rem;
-  width: 400px;
-  height: 300px;
-  top: -30px;
-  right: -30px;
+  width: 355px;
+  height: 500px;
+  top: -65px;
+  right: -18px;
 }
 
 @media only screen and (max-width: 979px) {
